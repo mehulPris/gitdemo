@@ -15,7 +15,7 @@ jobs:
     - name: Setup Flutter
       uses: subosito/flutter-action@v2
       with:
-        flutter-version: '2.x.x'  # specify the Flutter version you want to use
+        flutter-version: '3.7.11'  # specify the Flutter version you want to use
 
     - name: Build APK
       run: flutter build apk
