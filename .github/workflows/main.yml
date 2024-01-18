@@ -32,12 +32,3 @@ jobs:
         with:
           name: app-release
           path: build/app/outputs/flutter-apk
-
-      - name: Rename artifact
-        run: mv ${{ github.workspace }}/build/app/outputs/flutter-apk/app-release.apk ${{ github.workspace }}/build/app/outputs/flutter-apk/mj.apk
-
-      - name: Upload renamed artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: mj-apk
-          path: build/app/outputs/flutter-apk/mj.apk
