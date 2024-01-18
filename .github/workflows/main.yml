@@ -16,7 +16,7 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.7.11' # Replace with your Flutter version
+          flutter-version: '3.*.*' # Replace with your Flutter version
           working-directory: ${{ github.workspace }}
 
       - name: Get dependencies
@@ -27,3 +27,9 @@ jobs:
 
       - name: Build APK
         run: flutter build apk
+
+      - name: Archive artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: app-release
+          path: build/app/outputs/flutter-apk
