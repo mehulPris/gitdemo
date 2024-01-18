@@ -36,3 +36,9 @@ jobs:
 
       - name: List files in the artifact directory
         run: ls -R ${{ github.workspace }}/build/app/outputs/flutter-apk
+
+      - name: Debug Information
+        run: |
+            ls -R ${{ github.workspace }}
+            echo $HOME
+            env
