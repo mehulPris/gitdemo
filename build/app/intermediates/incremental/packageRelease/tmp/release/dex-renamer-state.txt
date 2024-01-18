@@ -1,4 +1,4 @@
-#Thu Jan 18 15:20:48 IST 2024
+#Thu Jan 18 16:05:25 IST 2024
 base.0=/Users/prismetricm1macmini/MJ/Flutter/gitdemo/gitdemo/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
