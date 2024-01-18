@@ -1,0 +1,18 @@
+<lint-module
+    format="1"
+    dir="/Users/prismetricm1macmini/MJ/Flutter/gitdemo/gitdemo/android/app"
+    name=":app"
+    type="APP"
+    maven="android:app:"
+    gradle="7.2.0"
+    buildFolder="/Users/prismetricm1macmini/MJ/Flutter/gitdemo/gitdemo/build/app"
+    bootClassPath="/Users/prismetricm1macmini/Library/Android/sdk/platforms/android-33/android.jar:/Users/prismetricm1macmini/Library/Android/sdk/build-tools/30.0.3/core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-33">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>
