@@ -17,6 +17,7 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.7.11' # Replace with your Flutter version
+          working-directory: ${{ github.workspace }}
 
       - name: Get dependencies
         run: flutter pub get
