@@ -1,4 +1,5 @@
 name: GitHub Demo
+
 on:
   push:
     branches:
@@ -19,6 +20,12 @@ jobs:
 
       - name: Get dependencies
         run: flutter pub get
+
+      - name: Create necessary directories
+        run: mkdir -p build/app/intermediates/flutter/release/arm64-v8a
+
+      - name: Run tests
+        run: flutter test
 
       - name: Build APK
         run: flutter build apk
